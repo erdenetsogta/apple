@@ -1,3 +1,174 @@
 body {
   margin: 0;
+  font-family: Inter, sans-serif;
 }
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  background-color: rgba(245, 245, 247, 0.8);
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-icons {
+  display: flex;
+}
+
+.icon-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+}
+
+@media (min-width: 1000px) {
+  .menu {
+    display: flex;
+    gap: 24px;
+  }
+  .menu > a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+  }
+
+  header {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* END OF HEADER */
+
+/* TOP-AD */
+.top-ad {
+  padding: 16px 30px;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 450px;
+  color: rgba(29, 29, 31, 1);
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .top-ad {
+    max-width: 100%;
+  }
+}
+/* END OF TOP-AD */
+
+/* PRO */
+.pro {
+  box-sizing: border-box;
+  height: 500px;
+  background-color: black;
+  background-image: url(images/pro-mobile.png);
+  background-size: cover;
+  color: rgba(245, 245, 247, 1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 36px;
+}
+
+.pro__title {
+  margin-bottom: 4px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.pro__subtitle {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 120%;
+}
+.pro__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .pro {
+    justify-content: flex-start;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/pro-tablet.png);
+    height: 650px;
+    padding-top: 58px;
+  }
+
+  .pro__title {
+    font-size: 42px;
+    line-height: 60px;
+  }
+  .pro__subtitle {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .pro__actions {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .pro {
+    height: 692px;
+    background-image: url(images/pro-desktop.png);
+    background-size: cover;
+  }
+  .pro__title {
+    font-size: 52px;
+  }
+  .pro__subtitle {
+    font-size: 24px;
+  }
+}
+
+/* BUTTONS */
+.btn {
+  padding: 8px 16px;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+
+@media (min-width: 500px) {
+  .btn {
+    padding: 12px 20px;
+    border-radius: 22px;
+    font-size: 16px;
+  }
+}
+
+.btn--primary {
+  background-color: rgba(0, 113, 227, 1);
+  color: white;
+}
+
+.btn--outlined {
+  background-color: transparent;
+  color: rgba(41, 151, 255, 1);
+  border-color: rgba(41, 151, 255, 1);
+}
+/* END OF BUTTONS */
