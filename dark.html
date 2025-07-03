@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <script></script>
+    <style>
+      body {
+        background-color: aquamarine;
+        color: black;
+      }
+
+      h1 {
+        font-size: 100px;
+        text-align: center;
+        padding-top: 200px;
+        font-family: sans-serif;
+      }
+
+      .dark body {
+        background-color: darkblue;
+        color: white;
+      }
+
+      button {
+        font-size: 50px;
+        background-color: transparent;
+        border: 0;
+      }
+      button::after {
+        content: "☀️";
+      }
+
+      .dark button::after {
+        content: "🌙";
+      }
+
+      /* @media (prefers-color-scheme: dark) {
+        body {
+          background-color: darkblue;
+          color: white;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <button
+      onclick="document.documentElement.classList.toggle('dark')"
+    ></button>
+
+    <h1>This is Dark Mode</h1>
+  </body>
+</html>
